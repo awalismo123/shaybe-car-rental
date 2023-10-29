@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #1da98d;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .vehicle-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    display: inline;
+  }
+  
+  .vehicle-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    float: left;
+    
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  

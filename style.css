@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.navigation a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 50px;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+button {
+  padding: 15px;
+  background: #0698fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  
+  .header {
+    justify-content: center;
+  }
+}

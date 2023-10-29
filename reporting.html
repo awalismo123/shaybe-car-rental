@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting and Analytics</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #009688;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #009688;
+        }
+
+        .chart-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .summary {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .home-button {
+            background-color: #009688;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Reporting and Analytics</h1>
+    </header>
+</div>
+
+<a href="/ismo.html" class="home-button">Home</a>
+</div>
+
+    <div class="container">
+        <div class="chart-container">
+            <!-- Chart.js canvas -->
+            <canvas id="analyticsChart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Total Sales: $500,000</p>
+            <p>Average Order Value: $100</p>
+            <p>Number of Customers: 1,000</p>
+      
+  
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Sample Chart.js implementation
+        var ctx = document.getElementById('analyticsChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Sales',
+                    data: [50, 80, 60, 90, 70, 100],
+                    backgroundColor: 'rgba(0, 150, 136, 0.8)',
+                    borderColor: 'rgba(0, 150, 136, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

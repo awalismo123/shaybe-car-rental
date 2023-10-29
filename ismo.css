@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #acb1e4;
+}
+
+header {
+  background-image:
+    linear-gradient(to bottom, rgba(26, 39, 108, 0.52), rgba(21, 17, 21, 0.73)),
+    url('/free.jpg');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  
+}
+.logo img {
+  height: 200px; /* Adjust the height as needed */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+nav {
+  position: absolute; /* Add position absolute to the nav */
+  top: 0; /* Position it at the top */
+  right: 0; /* Position it at the right */
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #070606;
+}
+
+nav ul li a:hover :active {
+  background-color: rgb(167, 40, 70);
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+.content {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.rental-steps {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.rental-steps li {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Optional: Style the list items with icons or other visual elements */
+.rental-steps li::before {
+  content: '\2022'; /* Bullet point character */
+  color: #009688; /* Green color, you can customize */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

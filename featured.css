@@ -1,0 +1,67 @@
+/* Styling for header */
+body{
+    background-color: #ebe0e0;
+}
+header {
+    background-color: #c49f9f;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    text-align: center; 
+  }
+  
+  /* Styling for main content */
+  
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .featured-cars {
+    margin: 2rem 0;
+  }
+  
+  .featured-cars h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .featured-cars article {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 1rem;
+    font-family: arial;
+  }
+  
+  .featured-cars img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+  } 
+  
+  /* Styling for footer */
+  
+  footer {
+    background: #b59c9c;
+    text-align: center;
+    padding: 1rem; 
+  }
+  
+  /* Responsiveness */
+  
+  @media (max-width: 768px) {
+  
+    .featured-cars article {
+      flex-direction: column;
+    }
+    
+    .featured-cars img {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+  
+  }
